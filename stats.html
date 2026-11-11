@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Телеметрия — Проектная</title>
 <link rel="icon" href="favicon.png" />
+<link rel="stylesheet" href="fonts.css" />
 <link rel="stylesheet" href="style.css" />
 <link rel="stylesheet" href="page-transition.css" />
 <link rel="stylesheet" href="fx.css" />
@@ -310,7 +311,7 @@ var GAS_URL = 'https://script.google.com/macros/s/AKfycbziPtoA2-5mOmTui5G3XL5eP6
           if (!window.pjStats) return;
           delete window.pjStats;
           s.remove();
-          fail(new Error('доступ к скрипту закрыт: открой в приватном окне ' + url + '?task=stats&pass=adminer — если просит вход в Google, ставь доступ «Все»'));
+          fail(new Error('доступ к скрипту закрыт: проверь настройки развертывания Google Apps Script — доступ «Все»'));
         }, 15000);
         s.onload = function () { clearTimeout(dead); if (window.pjStats) { delete window.pjStats; clearTimeout(dead); fail(new Error('скрипт вернул не JSON — вставлен код из apps-script.gs?')); } };
         s.onerror = function () { clearTimeout(dead); delete window.pjStats; fail(new Error('нет связи со скриптом — проверь интернет')); };

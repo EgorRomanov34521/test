@@ -16,15 +16,15 @@
 /* открытие страницы: быстрый вылет камеры наружу, плавное затухание в конце */
 body.pt-in #page-content {
   transition:
-    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1),
-    opacity 0.35s ease 0.3s;
+    transform 0.32s cubic-bezier(0.16, 1, 0.3, 1),
+    opacity 0.16s ease;
 }
 
 /* уход со страницы: разгон камеры внутрь точки */
 body.pt-out #page-content {
   transition:
-    transform 0.55s cubic-bezier(0.7, 0, 0.84, 0),
-    opacity 0.3s ease;
+    transform 0.16s cubic-bezier(0.7, 0, 0.84, 0),
+    opacity 0.12s ease;
 }
 
 body.pt-open #page-content {
@@ -57,10 +57,10 @@ body.pt-done #page-content { transform: none; }
 }
 @keyframes ptSpin { to { rotate: 360deg; } }
 body.pt-in .pt-reticle {
-  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+  transition: transform 0.32s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.16s ease;
 }
 body.pt-out .pt-reticle {
-  transition: transform 0.4s cubic-bezier(0.7, 0, 0.84, 0), opacity 0.2s ease;
+  transition: transform 0.16s cubic-bezier(0.7, 0, 0.84, 0), opacity 0.12s ease;
 }
 body.pt-open .pt-reticle {
   transform: translate(-50%, -50%) scale(1);
@@ -78,7 +78,7 @@ body.pt-open .pt-reticle {
   transform: scaleY(0);
   transform-origin: 50% 0;
   background: repeating-linear-gradient(135deg, #101216 0 14px, #1b34e8 14px 17px, #101216 17px 30px);
-  transition: transform 0.42s cubic-bezier(0.77, 0, 0.18, 1);
+  transition: transform 0.14s cubic-bezier(0.77, 0, 0.18, 1);
 }
 body.pt-out #page-transition::before {
   transform: scaleY(1);
@@ -92,7 +92,7 @@ body.pt-in #page-transition::before {
 body.pt-in.pt-open #page-transition::before {
   transform: scaleY(0);
   transform-origin: 50% 100%;
-  transition: transform 0.62s cubic-bezier(0.77, 0, 0.18, 1);
+  transition: transform 0.28s cubic-bezier(0.77, 0, 0.18, 1);
 }
 
 /* кислотная линия по нижней кромке затвора */

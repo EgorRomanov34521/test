@@ -11,8 +11,8 @@
   hideStyle.textContent = 'body{visibility:hidden!important;}';
   document.head.appendChild(hideStyle);
 
-  var DURATION_IN = 700;  // должно совпадать с transform-длительностью .pt-in в CSS
-  var DURATION_OUT = 550; // должно совпадать с transform-длительностью .pt-out в CSS
+  var DURATION_IN = 320;
+  var DURATION_OUT = 160;
   var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var content, mark;
 

@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@400;500;600;700;800&display=swap');
 
 :root {
   --bg: #e9e2d0;
@@ -171,7 +170,7 @@ html.is-scrolled .header-inner { height: 56px; }
   left: 400px;
   width: 45%;
   aspect-ratio: 2952 / 1374;
-  background: url('loxi-bg.png') center / 100% 100% no-repeat;
+  background: url('assets/images/loxi-bg.webp') center / 100% 100% no-repeat;
   opacity: 1;
   filter: brightness(1.6);
   pointer-events: none;
